@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deportes</title>
+    <style>
+        /* Estilos básicos */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #ddd;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
+            background-image: linear-gradient(135deg, rgba(255, 255, 0, 0.2) 10%, transparent 10%, transparent 20%, rgba(255, 255, 0, 0.2) 20%, transparent 30%);
+            background-size: 10px 10px;
+            height: 100%; /* Aseguramos que el cuerpo ocupe el 100% */
+        }
+
+        /* Encabezado */
+        header {
+            width: 90%;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(255, 255, 0, 0.3);
+        }
+        header h1 {
+            font-size: 2.2rem;
+            color: #ffdd57;
+            text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.6);
+        }
+
+        /* Botón Deportes */
+        .deportes-btn {
+            margin-top: 30px;
+            font-size: 1.5rem;
+            color: #000;
+            background-color: #ffdd57;
+            padding: 15px 30px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s, background-color 0.3s;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+        }
+        .deportes-btn:hover {
+            transform: scale(1.05);
+            background-color: #ffcc00;
+        }
+
+        /* Eliminar subrayado en el enlace */
+        a {
+            text-decoration: none; /* Elimina el subrayado en el enlace */
+        }
+
+        /* Citas inspiradoras */
+        .quote {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.75);
+            font-style: italic;
+            position: absolute;
+            width: 160px;
+            text-align: center;
+            line-height: 1.4;
+        }
+        .quote-left { left: 20px; }
+        .quote-right { right: 20px; }
+        .quote-1 { top: 20%; }
+        .quote-2 { top: 35%; }
+        .quote-3 { top: 50%; }
+        .quote-4 { top: 65%; }
+        .quote-5 { top: 80%; }
+
+        /* Sección de deportes */
+        .deporte-section {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 30px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 10px rgba(255, 255, 0, 0.3);
+            color: #fff;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1s ease, transform 1s ease;
+            text-align: center;
+            width: 100%;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .deporte-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .deporte-section h3 {
+            color: #ffdd57;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }
+        .deporte-section p {
+            font-size: 0.95rem;
+            color: #ddd;
+            margin-bottom: 25px;
+        }
+        .deporte-section img {
+            width: 85%;
+            height: auto;
+            border-radius: 8px;
+            opacity: 0.9;
+            display: block;
+            margin: 0 auto;
+        }
+        .deporte-section img:hover {
+            opacity: 1;
+        }
+
+        /* Íconos deportivos en la parte inferior */
+        .icon-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        .icon {
+            font-size: 2.5rem;
+            color: rgba(255, 255, 0, 0.8);
+            transition: transform 0.3s;
+        }
+        .icon:hover {
+            transform: scale(1.1);
+        }
+
+        /* Estilo para enlaces (nombres de deportes) */
+        .deporte-section a {
+            color: #ffdd57;
+            text-decoration: none;
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+        .deporte-section a:hover {
+            text-decoration: underline;
+        }
+
+        /* Espacio reducido antes de los deportes (24% de la altura de la pantalla) */
+        .spacer {
+            height: 24vh; /* Espacio ajustado al 24% de la altura de la pantalla */
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado de la página -->
+    <header>
+        <h1>Bienvenidos a Nuestra Sección de Deportes</h1>
+    </header>
+
+    <!-- Botón para mostrar secciones de deportes (con link a la sección) -->
+    <a href="#deportesContent">
+        <div class="deportes-btn">Deportes</div>
+    </a>
+
+    <!-- Citas inspiradoras en collage a los lados -->
+    <p class="quote quote-left quote-1">"El éxito no se da por suerte, se gana con esfuerzo."</p>
+    <p class="quote quote-right quote-2">"No se trata de ser el mejor, sino de ser mejor que ayer."</p>
+    <p class="quote quote-left quote-3">"La disciplina es el puente entre metas y logros."</p>
+    <p class="quote quote-right quote-4">"El talento gana partidos, pero el trabajo en equipo gana campeonatos."</p>
+    <p class="quote quote-left quote-5">"Cada día es una oportunidad para mejorar."</p>
+
+    <!-- Espacio adicional antes del contenido de los deportes -->
+    <div class="spacer"></div>
+
+    <!-- Contenedor principal para los deportes -->
+    <div class="content" id="deportesContent">
+        <!-- Sección de introducción a cada deporte -->
+        <section class="deporte-section">
+            <h3><a href="basketball.html">Basketball</a></h3>
+            <p>El basketball es un deporte dinámico donde los jugadores deben encestar el balón en el aro del equipo contrario. Es conocido por su velocidad, habilidad y precisión.</p>
+            <img src="Basketball.jpg" alt="Imagen de Basketball">
+        </section>
+
+        <section class="deporte-section">
+            <h3><a href="futbol.html">Fútbol</a></h3>
+            <p>El fútbol es el deporte más popular del mundo. En él, dos equipos compiten para anotar goles en la portería contraria usando principalmente los pies.</p>
+            <img src="Futbol.jpg" alt="Imagen de Fútbol">
+        </section>
+
+        <section class="deporte-section">
+            <h3><a href="Voleyball.html">Volleyball</a></h3>
+            <p>El volleyball es un deporte de equipo en el que los jugadores deben pasar la pelota por encima de una red sin que toque el suelo en su lado de la cancha.</p>
+            <img src="Voleyball.jpg" alt="Imagen de Volleyball">
+        </section>
+    </div>
+
+    <!-- Contenedor de íconos de balones deportivos en la parte inferior -->
+    <div class="icon-container">
+        <div class="icon">🏀</div>
+        <div class="icon">⚽</div>
+        <div class="icon">🏐</div>
+    </div>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const sections = document.querySelectorAll('.deporte-section');
+            sections.forEach((section) => {
+                const position = section.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.2; // Aparece después de un pequeño desplazamiento
+
+                if (position < screenPosition) {
+                    section.classList.add('visible');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deportes</title>
+    <style>
+        /* Estilos básicos y reseteo */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #e0f7fa, #e1bee7);
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
+        }
+
+        /* Encabezado */
+        header {
+            width: 90%;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            border-radius: 15px;
+        }
+        header h1 {
+            font-size: 2rem;
+            color: #007bff;
+            text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.4);
+            margin: 0;
+        }
+
+        /* Botón de Deportes */
+        .deportes-btn {
+            margin-top: 30px;
+            font-size: 1.5rem;
+            color: white;
+            background-color: #007bff;
+            padding: 15px 30px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s, background-color 0.3s;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .deportes-btn:hover {
+            transform: scale(1.05);
+            background-color: #0056b3;
+        }
+
+        /* Contenedor principal */
+        .content {
+            margin-top: 20px;
+            width: 90%;
+            max-width: 800px;
+            opacity: 0;
+            transition: opacity 0.8s ease-in-out;
+        }
+
+        /* Citas inspiradoras a los lados como collage */
+        .quote {
+            font-size: 0.9rem;
+            color: rgba(0, 0, 0, 0.7);
+            font-style: italic;
+            position: absolute;
+            width: 160px;
+            text-align: center;
+            line-height: 1.4;
+            opacity: 0.85;
+        }
+        .quote-left { left: 20px; }
+        .quote-right { right: 20px; }
+
+        /* Colocación de citas en los laterales */
+        .quote-1 { top: 20%; }
+        .quote-2 { top: 35%; }
+        .quote-3 { top: 50%; }
+        .quote-4 { top: 65%; }
+        .quote-5 { top: 80%; }
+
+        /* Íconos deportivos */
+        .icon {
+            font-size: 3rem;
+            color: rgba(0, 123, 255, 0.7);
+            position: absolute;
+            opacity: 0.8;
+            transition: transform 0.3s, color 0.3s;
+        }
+        .icon-left {
+            left: 20px;
+        }
+        .icon-right {
+            right: 20px;
+        }
+        .icon-1 { top: 55%; }
+        .icon-2 { top: 65%; }
+        .icon-3 { top: 75%; }
+
+        /* Sección de deportes */
+        .deporte-section {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .deporte-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .deporte-section h3 {
+            color: #007bff;
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+        }
+        .deporte-section p {
+            font-size: 0.95rem;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .deporte-section img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: opacity 0.3s;
+        }
+        .deporte-section img:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado de la página -->
+    <header>
+        <h1>Bienvenidos a Nuestra Sección de Deportes</h1>
+    </header>
+
+    <!-- Botón de Deportes -->
+    <div class="deportes-btn" onclick="mostrarDeportes()">Deportes</div>
+
+    <!-- Citas inspiradoras en los lados a modo de collage -->
+    <p class="quote quote-left quote-1">"El éxito no se da por suerte, se gana con esfuerzo."</p>
+    <p class="quote quote-right quote-2">"No se trata de ser el mejor, sino de ser mejor que ayer."</p>
+    <p class="quote quote-left quote-3">"La disciplina es el puente entre metas y logros."</p>
+    <p class="quote quote-right quote-4">"El talento gana partidos, pero el trabajo en equipo gana campeonatos."</p>
+    <p class="quote quote-left quote-5">"Cada día es una oportunidad para mejorar."</p>
+
+    <!-- Íconos deportivos a los lados sin barra decorativa -->
+    <div class="icon icon-left icon-1">🏀</div>
+    <div class="icon icon-left icon-2">⚽</div>
+    <div class="icon icon-left icon-3">🏐</div>
+    <div class="icon icon-right icon-1">🏀</div>
+    <div class="icon icon-right icon-2">⚽</div>
+    <div class="icon icon-right icon-3">🏐</div>
+
+    <!-- Contenedor principal para los deportes -->
+    <div class="content" id="deportesContent">
+        <!-- Sección de introducción a cada deporte -->
+        <section class="deporte-section">
+            <h3>Basketball</h3>
+            <p>El basketball es un deporte dinámico donde los jugadores deben encestar el balón en el aro del equipo contrario. Es conocido por su velocidad, habilidad y precisión.</p>
+            <img src="basketball.jpg" alt="Imagen de Basketball">
+        </section>
+
+        <section class="deporte-section">
+            <h3>Fútbol</h3>
+            <p>El fútbol es el deporte más popular del mundo. En él, dos equipos compiten para anotar goles en la portería contraria usando principalmente los pies.</p>
+            <img src="futbol.jpg" alt="Imagen de Fútbol">
+        </section>
+
+        <section class="deporte-section">
+            <h3>Volleyball</h3>
+            <p>El volleyball es un deporte de equipo en el que los jugadores deben pasar la pelota por encima de una red sin que toque el suelo en su lado de la cancha.</p>
+            <img src="volleyball.jpg" alt="Imagen de Volleyball">
+        </section>
+    </div>
+
+    <!-- Script para mostrar los deportes progresivamente al hacer scroll -->
+    <script>
+        function mostrarDeportes() {
+            const deportesContent = document.getElementById('deportesContent');
+            deportesContent.style.opacity = '1';
+            const secciones = document.querySelectorAll('.deporte-section');
+            
+            // Añade un observador para que aparezcan las secciones al hacer scroll
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.3 });
+
+            secciones.forEach(seccion => observer.observe(seccion));
+        }
+
+        // Ejecuta mostrarDeportes al hacer scroll
+        window.addEventListener('DOMContentLoaded', mostrarDeportes);
+    </script>
+</body>
+</html>
