@@ -1,7 +1,7 @@
 # Proyecto Web de Deportes
 
 Este es un sitio web dedicado a proporcionar información sobre diversos deportes. El proyecto consta de una página principal con enlaces a tres secciones dedicadas a diferentes deportes: **Basketball**, **Fútbol**, y **Volleyball**. En cada sección se puede encontrar una breve descripción, historia, estrategias, y noticias actuales relacionadas con el deporte correspondiente.
-
+Para acceder al proyecto por medio de GitHub Pages, el siguiente enlace: https://nurarito.github.io/Proyecto/
 ## Tecnologías utilizadas
 
 - **HTML**: Estructura de las páginas web.
@@ -57,3 +57,40 @@ La página `Voleyball.html` se dedica al **Voleibol**, con:
 - Las **últimas noticias** sobre competiciones y entrenamientos internacionales de voleibol.
 - Un botón para regresar a la **página principal** (`index.html`).
 
+## Instrucciones de Despliegue
+
+1. Clonar el Repositorio
+Primero, clona este repositorio a tu máquina local. Abre una terminal y ejecuta el siguiente comando:
+
+
+Copiar código
+git clone https://github.com/tu-usuario/proyecto-deportes.git
+2. Estructura del Proyecto
+El proyecto incluye varias páginas HTML, un archivo CSS para estilos y archivos JavaScript para la interactividad. A continuación se muestra la estructura del proyecto:
+
+
+Copiar código
+proyecto-deportes/
+│
+├── index.html         # Página principal
+├── volleyball.html    # Página de Volleyball
+├── basketball.html    # Página de Basketball
+├── futbol.html        # Página de Futbol
+├── deportes.html      # Página de todos los deportes
+├── style.css          # Archivo de estilos comunes
+└── README.md          # Este archivo
+3. Visualización Local
+Una vez que hayas clonado el repositorio, puedes visualizar las páginas directamente en tu navegador. No es necesario un servidor web si solo deseas probar las páginas localmente.
+
+Para ver las páginas:
+
+Navega a la carpeta del proyecto en tu terminal.
+
+Abre el archivo HTML que deseas visualizar, por ejemplo, index.html, con tu navegador:
+
+Copiar código
+open index.html
+o si estás usando Windows:
+
+Copiar código
+start index.html
