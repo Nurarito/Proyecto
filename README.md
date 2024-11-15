@@ -73,17 +73,13 @@ proyecto-deportes/
 
 │
 
-├── index.html         # Página principal
+├── index.html         # Página principal de deportes
 
 ├── volleyball.html    # Página de Volleyball
 
 ├── basketball.html    # Página de Basketball
 
 ├── futbol.html        # Página de Futbol
-
-├── deportes.html      # Página de todos los deportes
-
-├── style.css          # Archivo de estilos comunes
 
 └── README.md          # Este archivo
 
