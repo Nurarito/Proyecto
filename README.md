@@ -63,7 +63,7 @@ La página `Voleyball.html` se dedica al **Voleibol**, con:
 Primero, clona este repositorio a tu máquina local. Abre una terminal y ejecuta el siguiente comando:
 
 
-git clone https://github.com/tu-usuario/proyecto-deportes.git
+git clone https://github.com/Nurarito/Proyecto.git
 
 2. Estructura del Proyecto
 El proyecto incluye varias páginas HTML, un archivo CSS para estilos y archivos JavaScript para la interactividad. A continuación se muestra la estructura del proyecto:
