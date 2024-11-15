@@ -63,13 +63,12 @@ La página `Voleyball.html` se dedica al **Voleibol**, con:
 Primero, clona este repositorio a tu máquina local. Abre una terminal y ejecuta el siguiente comando:
 
 
-Copiar código
 git clone https://github.com/tu-usuario/proyecto-deportes.git
+
 2. Estructura del Proyecto
 El proyecto incluye varias páginas HTML, un archivo CSS para estilos y archivos JavaScript para la interactividad. A continuación se muestra la estructura del proyecto:
 
 
-Copiar código
 proyecto-deportes/
 │
 ├── index.html         # Página principal
@@ -95,9 +94,7 @@ Navega a la carpeta del proyecto en tu terminal.
 
 Abre el archivo HTML que deseas visualizar, por ejemplo, index.html, con tu navegador:
 
-Copiar código
 open index.html
 o si estás usando Windows:
 
-Copiar código
 start index.html
