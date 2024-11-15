@@ -70,7 +70,9 @@ El proyecto incluye varias páginas HTML, un archivo CSS para estilos y archivos
 
 
 proyecto-deportes/
+
 │
+
 ├── index.html         # Página principal
 
 ├── volleyball.html    # Página de Volleyball
