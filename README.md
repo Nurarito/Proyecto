@@ -73,12 +73,19 @@ Copiar código
 proyecto-deportes/
 │
 ├── index.html         # Página principal
+
 ├── volleyball.html    # Página de Volleyball
+
 ├── basketball.html    # Página de Basketball
+
 ├── futbol.html        # Página de Futbol
+
 ├── deportes.html      # Página de todos los deportes
+
 ├── style.css          # Archivo de estilos comunes
+
 └── README.md          # Este archivo
+
 3. Visualización Local
 Una vez que hayas clonado el repositorio, puedes visualizar las páginas directamente en tu navegador. No es necesario un servidor web si solo deseas probar las páginas localmente.
 
