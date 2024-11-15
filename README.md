@@ -23,7 +23,7 @@ La página principal (`index.html`) es la puerta de entrada al sitio. Incluye:
 
 ### Página de Deportes - `Deportes.html`
 
-La página `Deportes.html` sirve como índice para acceder a las páginas de cada deporte. Contiene:
+La página `index.html` sirve como índice para acceder a las páginas de cada deporte. Contiene:
 
 - **Enlaces a las secciones** de deportes: **Basketball**, **Fútbol** y **Volleyball**.
 - Un **fondo animado** con líneas que crean un patrón dinámico para hacer la experiencia visual más atractiva.
@@ -35,7 +35,7 @@ La página `basketball.html` proporciona información relevante sobre el **Baske
 - Una **historia del basketball**, describiendo sus orígenes y evolución hasta convertirse en un deporte profesional y global.
 - Una **estrategia básica** para los equipos de baloncesto, destacando las posiciones claves y su impacto en el juego.
 - Las **últimas noticias** sobre eventos internacionales de basketball y sus selecciones nacionales.
-- Un botón para regresar a la **página principal** (`Deportes.html`).
+- Un botón para regresar a la **página principal** (`index.html`).
 
 ### Página de Fútbol - `futbol.html`
 
@@ -45,7 +45,7 @@ La página `futbol.html` está dedicada al **Fútbol** (soccer) y presenta:
 - La **historia del fútbol**, abordando sus orígenes y su crecimiento hacia la globalización.
 - Una **estrategia** en el fútbol, con enfoque en las posiciones y tácticas fundamentales.
 - Las **últimas noticias** relacionadas con competiciones y selecciones nacionales de fútbol.
-- Un botón para regresar a la **página principal** (`Deportes.html`).
+- Un botón para regresar a la **página principal** (`index.html`).
 
 ### Página de Volleyball - `Voleyball.html`
 
@@ -55,5 +55,5 @@ La página `Voleyball.html` se dedica al **Voleibol**, con:
 - La **historia del voleibol**, desde su creación hasta su popularidad en torneos internacionales y de playa.
 - Las **estrategias de equipo**, detallando las posiciones principales como el armador y los bloqueadores.
 - Las **últimas noticias** sobre competiciones y entrenamientos internacionales de voleibol.
-- Un botón para regresar a la **página principal** (`Deportes.html`).
+- Un botón para regresar a la **página principal** (`index.html`).
 
